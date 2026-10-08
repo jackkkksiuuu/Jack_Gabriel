@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light only">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baby Shower de Gabriel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light only;--bg:#fbf8ee;--ink:#6b6450;--olive:#7d8b4e;--olive-d:#5f6d38;--sand:#e9dfc0;--butter:#f3e4a0;--card:#fffdf6;
+--script:'Dancing Script','Brush Script MT',cursive;--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#fbf8ee;--ink:#6b6450}}
+:root[data-theme="dark"]{--bg:#fbf8ee;--ink:#6b6450}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:var(--serif);font-size:19px;text-align:center;overflow-x:hidden;
+background:radial-gradient(circle at 10% 8%,#efe6c9 0,transparent 32%),radial-gradient(circle at 92% 30%,#e6ecd2 0,transparent 30%),radial-gradient(circle at 8% 70%,#e6ecd2 0,transparent 30%),radial-gradient(circle at 90% 95%,#efe6c9 0,transparent 32%),var(--bg)}
+.wrap{max-width:460px;margin:0 auto;padding:0 22px 44px;position:relative}
+svg{display:block}
+.hero{width:100%;height:auto;margin:0 auto}
+.sway{transform-box:fill-box;transform-origin:50% 0;animation:sway 5s ease-in-out infinite}
+.sway.b{animation-delay:-1.5s}.sway.c{animation-delay:-3s}.sway.d{animation-delay:-2.2s}
+@keyframes sway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+.rise{opacity:0;transform:translateY(16px);animation:rise .9s ease forwards}
+.r2{animation-delay:.25s}.r3{animation-delay:.5s}.r4{animation-delay:.75s}.r5{animation-delay:1s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.sway,.rise{animation:none;opacity:1;transform:none}}
+.kicker{font-style:italic;font-size:21px;margin:0}
+.script{font-family:var(--script);font-weight:700;color:var(--olive);font-size:54px;line-height:1;margin:6px 0 0}
+.name{font-weight:600;font-size:46px;letter-spacing:.32em;text-indent:.32em;color:var(--olive-d);margin:4px 0 8px}
+.parents{font-style:italic;font-size:20px;margin:0}
+.ornament{display:flex;align-items:center;justify-content:center;gap:10px;margin:22px auto;color:var(--olive)}
+.ornament:before,.ornament:after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--olive))}
+.ornament:after{transform:scaleX(-1)}
+.when{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin:0 -6px}
+.when .side{border-top:1.5px solid var(--olive);border-bottom:1.5px solid var(--olive);padding:10px 0;font-size:22px}
+.when .num{font-size:78px;line-height:.9;font-weight:500;color:var(--olive-d)}
+.when .mon{display:block;font-size:22px;letter-spacing:.2em;text-transform:uppercase;margin-top:2px}
+.cdt{font-size:38px;margin:26px 0 4px}
+#count{display:flex;justify-content:center;align-items:flex-start;gap:4px;margin:6px 0}
+#count .u{min-width:62px}
+#count b{display:block;font-size:46px;font-weight:500;line-height:1;color:#5f6d38}
+#count span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#6b6450;margin-top:5px}
+#count i{font-style:normal;font-size:40px;line-height:1;color:#7d8b4e}
+.panel{background:rgba(255,253,246,.85);border:1.5px solid var(--sand);border-radius:26px;padding:22px 18px;margin:26px 0 0;box-shadow:0 6px 18px rgba(125,139,78,.12)}
+.ic{width:34px;height:34px;stroke:var(--olive-d);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 6px}
+.panel h3{font-family:var(--script);font-size:32px;color:var(--olive);margin:0 0 4px;font-weight:700}
+.panel p{margin:4px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;padding:13px 26px;border-radius:40px;text-decoration:none;font-family:var(--serif);font-size:20px;font-weight:600;letter-spacing:.03em;transition:transform .2s}
+.btn:active,.btn:hover{transform:scale(1.04)}
+.btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.b1{background:var(--olive);color:#fff}.b2{background:var(--butter);color:var(--olive-d);border:1.5px solid var(--olive)}
+.gifts{display:flex;justify-content:center;gap:34px;margin:12px 0 8px}
+.gifts div{width:78px;height:78px;border-radius:50%;background:var(--butter);display:flex;align-items:center;justify-content:center}
+.gifts .ic{width:40px;height:40px;margin:0}
+.end{font-family:var(--script);font-weight:700;font-size:40px;color:var(--olive);margin:26px 0 0}
+#msg{font-family:var(--script);font-size:30px;color:var(--olive);margin:0}
+.frame{position:relative;margin:30px 0 0;padding:14px 12px 20px;background:rgba(255,253,246,.92);border:2px solid #c9b04a;box-shadow:inset 0 0 0 5px #fffdf6,inset 0 0 0 6px #e3d28a}
+.sec{padding:18px 6px 8px}
+.up{font-family:var(--serif);font-weight:500;font-size:30px;letter-spacing:.06em;color:var(--olive-d);margin:0}
+.gs{font-family:'Great Vibes','Dancing Script',cursive;font-size:50px;line-height:1;color:#b89a2b;margin:-4px 0 12px}
+.gs.fin{font-size:46px;margin:24px 0 6px;white-space:nowrap}
+.big{width:66px;height:66px;margin:0 auto 12px;fill:none;stroke:var(--olive-d);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.sec p{margin:8px 8px}
+.rect{display:inline-block;margin-top:12px;padding:9px 28px;background:var(--olive);color:#fff;text-decoration:none;font-size:21px;font-weight:600;letter-spacing:.02em}
+.sp{position:absolute;width:16px;height:16px;fill:#d8c46a;opacity:.85}
+.s1{top:26px;left:26px}.s2{top:120px;right:34px}.s3{top:60%;left:22px}.s4{bottom:60px;right:30px}
+.where{position:relative;margin:26px 0 0;padding:22px 18px;border-radius:0;background:rgba(255,253,246,.92);border:2px solid #c9b04a;box-shadow:inset 0 0 0 5px #fffdf6,inset 0 0 0 6px #e3d28a}
+.where .btn{border-radius:0;padding:9px 28px;font-size:21px}
+.w1{top:26px;right:30px}.w2{bottom:26px;left:28px}
+#mus{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;display:flex;align-items:center;gap:10px}
+#mus button{width:54px;height:54px;border-radius:50%;border:1.5px solid #c9b04a;background:#fffdf6;color:var(--olive-d);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(95,109,56,.28);padding:0}
+#mus svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#mus .off{display:none}#mus.on .off{display:block}#mus.on .yes{display:none}
+#mus.on button{animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(125,139,78,.45)}100%{box-shadow:0 0 0 16px rgba(125,139,78,0)}}
+#mtip{background:#fffdf6;border:1px solid #e3d28a;padding:6px 12px;font-size:16px;font-style:italic;transition:opacity .6s}
+@media (prefers-reduced-motion:reduce){#mus.on button{animation:none}}
+html:not(.js) #count{display:none}#nojs{display:none;font-style:italic;margin:8px 10px}html:not(.js) #nojs{display:block}
+</style>
+<script>document.documentElement.className+=" js"</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="9" width="17" height="4"/><path d="M5 13v7.5h14V13M12 9v11.5M12 9C9 9 7 7.8 7.6 6.2 8.3 4.5 11 5.5 12 9zM12 9c3 0 5-1.2 4.4-2.8C15.7 4.5 13 5.5 12 9z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6.2L20.5 7"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 19.5l1.2-4A8 8 0 1 1 8.5 18.6z"/><path d="M9 9.5c.3 2.4 2.3 4.4 5 5l1.2-1.4-1.9-1-.9.8c-.8-.4-1.5-1.1-1.8-1.9l.8-.9-1-1.9z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.6 4.2 4.2 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></symbol>
+<symbol id="i-note" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+<symbol id="i-off" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/><path d="M3 3l18 18"/></symbol>
+<symbol id="leaf" viewBox="0 0 20 40"><path d="M10 0C20 12 20 28 10 40 0 28 0 12 10 0z"/></symbol>
+</defs></svg>
+
+<div class="wrap">
+<svg class="hero" viewBox="0 0 360 270" role="img" aria-label="Tendedero con ropita de bebé y un conejito">
+<g fill="#7f9776"><use href="#leaf" x="8" y="18" width="16" height="32" transform="rotate(-70 16 34)"/><use href="#leaf" x="20" y="34" width="15" height="30" transform="rotate(-20 27 49)" fill="#93a98a"/><use href="#leaf" x="34" y="20" width="14" height="28" transform="rotate(-100 41 34)"/>
+<use href="#leaf" x="336" y="18" width="16" height="32" transform="rotate(70 344 34)"/><use href="#leaf" x="325" y="34" width="15" height="30" transform="rotate(20 332 49)" fill="#93a98a"/><use href="#leaf" x="312" y="20" width="14" height="28" transform="rotate(100 319 34)"/></g>
+<path d="M12 40Q180 92 348 40" fill="none" stroke="#cdb88c" stroke-width="2.5" stroke-linecap="round"/>
+<g class="sway"><rect x="66" y="48" width="7" height="16" rx="2" fill="#d9bf90"/><ellipse cx="70" cy="86" rx="7" ry="24" fill="#eadcc0"/><ellipse cx="90" cy="118" rx="7" ry="14" fill="#eadcc0" transform="rotate(20 90 118)"/><circle cx="76" cy="126" r="17" fill="#eadcc0"/><path d="M68 127q3 3 6 0M80 127q3 3 6 0" stroke="#8a7a5a" fill="none" stroke-width="1.4"/><circle cx="66" cy="132" r="3.5" fill="#efb5a5" opacity=".7"/><circle cx="87" cy="132" r="3.5" fill="#efb5a5" opacity=".7"/><ellipse cx="76" cy="132" rx="3" ry="2" fill="#b98a78"/><path d="M60 144h32l6 34H54z" fill="#a9c1d8"/><ellipse cx="66" cy="196" rx="6" ry="20" fill="#eadcc0"/><ellipse cx="86" cy="196" rx="6" ry="20" fill="#eadcc0"/></g>
+<g class="sway b"><rect x="136" y="57" width="7" height="16" rx="2" fill="#d9bf90"/><path d="M118 88a24 26 0 1 0 44 0q-4-14-22-14t-22 14z" fill="#a9bf98"/><circle cx="140" cy="86" r="9" fill="#fbf8ee"/><ellipse cx="140" cy="122" rx="10" ry="8" fill="#f4e59a"/><circle cx="133" cy="118" r="3" fill="#f4e59a"/><circle cx="136" cy="118" r=".9" fill="#5b5a3a"/></g>
+<g class="sway c"><rect x="211" y="58" width="7" height="16" rx="2" fill="#d9bf90"/><path d="M188 70l14-3q12 12 26 0l14 3 8 22-12 6q10 36-4 56-20 8-38 0-14-20-4-56l-12-6z" fill="#f2e7bd" stroke="#dccd9b" stroke-width="1.5"/></g>
+<g class="sway d"><rect x="283" y="49" width="7" height="16" rx="2" fill="#d9bf90"/><path d="M279 62h20v46q0 14-14 18l-16 6q-8-8 4-14l6-3z" fill="#7f9776"/><rect x="315" y="44" width="7" height="16" rx="2" fill="#d9bf90"/><path d="M310 57h20v46q0 14-14 18l-16 6q-8-8 4-14l6-3z" fill="#7f9776"/></g>
+</svg>
+
+<p class="kicker rise">Estás invitado a celebrar el</p>
+<h1 class="script rise r2" style="font-size:54px">Baby shower de</h1>
+<p class="name rise r2">GABRIEL</p>
+<p class="parents rise r3">con mucho amor,<br>Jaqueline Alvarez &amp; Victor Tovar</p>
+<div class="ornament rise r3"><svg class="ic" style="width:22px;height:22px;margin:0;fill:var(--olive);stroke:none"><use href="#i-heart"/></svg></div>
+
+<div class="when rise r4">
+<div class="side">Sábado</div>
+<div><span class="num">28</span><span class="mon">Noviembre</span></div>
+<div class="side">3:00 p.m.</div>
+</div>
+
+<p class="script cdt">Cuenta regresiva</p>
+<div id="count" role="timer" aria-live="off">
+<div class="u"><b id="cd-d">60</b><span>días</span></div><i>:</i>
+<div class="u"><b id="cd-h">18</b><span>horas</span></div><i>:</i>
+<div class="u"><b id="cd-m">53</b><span>minutos</span></div><i>:</i>
+<div class="u"><b id="cd-s">55</b><span>segundos</span></div>
+</div>
+<p id="msg"></p>
+<p id="nojs">Para ver la cuenta regresiva y la música, abre esta invitación en Chrome o Safari.</p>
+
+<div class="panel where">
+<svg class="sp w1" viewBox="-9 -9 18 18" aria-hidden="true"><path d="M0-8C1-2 2-1 8 0 2 1 1 2 0 8-1 2-2 1-8 0-2-1-1-2 0-8z"/></svg><svg class="sp w2" viewBox="-9 -9 18 18" aria-hidden="true"><path d="M0-8C1-2 2-1 8 0 2 1 1 2 0 8-1 2-2 1-8 0-2-1-1-2 0-8z"/></svg>
+<svg class="ic"><use href="#i-pin"/></svg>
+<h3>¿Dónde?</h3>
+<p><b>Tajomi Eventos</b></p>
+<p>Av. Perimetral Norte 969,<br>Misión de Santa Catarina</p>
+<a class="btn b1" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tajim+Eventos+Avenida+Perimetral+Norte+969+Mision+de+Santa+Catarina"><svg><use href="#i-pin"/></svg>Ver en Maps</a>
+</div>
+
+<div class="frame">
+<svg class="sp s1" viewBox="-9 -9 18 18" aria-hidden="true"><path d="M0-8C1-2 2-1 8 0 2 1 1 2 0 8-1 2-2 1-8 0-2-1-1-2 0-8z"/></svg><svg class="sp s2" viewBox="-9 -9 18 18" aria-hidden="true"><path d="M0-8C1-2 2-1 8 0 2 1 1 2 0 8-1 2-2 1-8 0-2-1-1-2 0-8z"/></svg><svg class="sp s3" viewBox="-9 -9 18 18" aria-hidden="true"><path d="M0-8C1-2 2-1 8 0 2 1 1 2 0 8-1 2-2 1-8 0-2-1-1-2 0-8z"/></svg><svg class="sp s4" viewBox="-9 -9 18 18" aria-hidden="true"><path d="M0-8C1-2 2-1 8 0 2 1 1 2 0 8-1 2-2 1-8 0-2-1-1-2 0-8z"/></svg>
+<section class="sec">
+<h2 class="up">CONFIRMAR</h2>
+<p class="gs">Asistencia</p>
+<svg class="big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.1 9.1 0 0 0-7.8 13.7L3 21.2l4.8-1.2A9.1 9.1 0 1 0 12 2.8z"/><path d="M9.2 7.6c-.4.3-.7 1-.5 1.8.7 2.2 2.900 4.400 5.100 5.100.8.2 1.500-.1 1.800-.5l.5-.8c.2-.3.1-.6-.1-.8l-1.600-1c-.3-.1-.6-.1-.8.1l-.5.6c-1.100-.4-2-1.300-2.400-2.400l.6-.5c.2-.2.2-.5.1-.8l-1-1.600c-.2-.3-.5-.3-.8-.1z"/></svg>
+<p>Nos encantará saber que nos acompañarás.<br>Te agradeceremos confirmar tu asistencia para poder preparar todos los detalles.</p>
+<a class="rect" target="_blank" rel="noopener" href="https://wa.me/528123614736?text=Hola%20Jaqueline%2C%20confirmo%20mi%20asistencia%20al%20baby%20shower%20de%20Gabriel">Confirma Aquí</a>
+</section>
+<section class="sec">
+<h2 class="up">SUGERENCIA DE</h2>
+<p class="gs">Regalos</p>
+<svg class="big" viewBox="0 0 64 64" aria-hidden="true"><rect x="15" y="8" width="22" height="27" rx="2" transform="rotate(-12 26 21)"/><rect x="27" y="6" width="22" height="27" rx="2" transform="rotate(10 38 19)"/><path d="M40 16c-3-2-6 0-4 2s5 2 3 4-4 2-6 0" transform="rotate(10 38 19)"/><rect x="9" y="28" width="46" height="28" rx="2" style="fill:var(--card)"/><path d="M9 30l23 15 23-15"/></svg>
+<p>Tu presencia es el mejor regalo que podemos recibir en este día tan especial.</p>
+<p>Si deseas tener un detalle adicional, encontrarás una caja para sobres durante la celebración.</p>
+<p class="gs fin">¡Te esperamos!</p>
+</section>
+</div>
+</div>
+<div id="mus"><span id="mtip">Toca para escuchar</span><button id="mbtn" type="button" aria-pressed="false" aria-label="Música"><svg class="yes"><use href="#i-note"/></svg><svg class="off"><use href="#i-off"/></svg></button></div>
+<script>
+(function(){
+var t=new Date(2026,10,28,15,0,0).getTime();
+function p(n){return (n<10?'0':'')+n}
+function tick(){
+var x=t-Date.now(),c=document.getElementById('count'),g=document.getElementById('msg');
+if(x<=0){c.style.display='none';g.textContent='¡Hoy es el gran día!';return;}
+document.getElementById('cd-d').textContent=p(Math.floor(x/864e5));
+document.getElementById('cd-h').textContent=p(Math.floor(x%864e5/36e5));
+document.getElementById('cd-m').textContent=p(Math.floor(x%36e5/6e4));
+document.getElementById('cd-s').textContent=p(Math.floor(x%6e4/1e3));}
+try{tick();setInterval(tick,1000);}catch(e){}
+})();
+
+(function(){
+var ctx=null,timer=null,on=false,box=document.getElementById('mus'),btn=document.getElementById('mbtn'),tip=document.getElementById('mtip');
+var F={C:523.25,D:587.33,E:659.25,F:698.46,G:783.99,A:880};
+var seq='CCGGAAg FFEEDDc GGFFEEd GGFFEEd CCGGAAg FFEEDDc'.replace(/ /g,'');
+function play(){
+if(!on)return;var t0=ctx.currentTime+.05,b=.62,t=t0;
+for(var i=0;i<seq.length;i++){var ch=seq[i],long=ch===ch.toLowerCase(),f=F[ch.toUpperCase()];
+note(f,t);note(f*2,t,.25);t+=long?b*2:b;}
+timer=setTimeout(play,(t-ctx.currentTime+1.4)*1000);}
+function note(f,t,v){var o=ctx.createOscillator(),g=ctx.createGain();o.type=v?'sine':'triangle';o.frequency.value=f;
+g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v||.16,t+.01);g.gain.exponentialRampToValueAtTime(.0008,t+1.3);
+o.connect(g);g.connect(ctx.destination);o.start(t);o.stop(t+1.4);}
+btn.onclick=function(){
+try{
+if(!on){var A=window.AudioContext||window.webkitAudioContext;ctx=new A();on=true;play();box.classList.add('on');}
+else{on=false;clearTimeout(timer);ctx.close();box.classList.remove('on');}
+btn.setAttribute('aria-pressed',on);tip.style.opacity=0;
+}catch(e){}};
+setTimeout(function(){tip.style.opacity=0},7000);
+})();
+</script>
+</body>
+</html>
